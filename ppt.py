@@ -1,7 +1,7 @@
 from random import choice
 
  
-print ("Hola, vamos a jugar a piedra, papel o tijera. Elige: \n 1 = Piedra, 2 = Papel, 3 = Tijera " )
+print ("Hola, vamos a jugar a piedra, papel o tijera. Elige una de las siguientes opciones: \n 1 = Piedra \n 2 = Papel \n 3 = Tijera \n 4 = Salir " )
 
 Opciones = ['1', '2', '3']
 Maquina = choice((Opciones))
@@ -14,7 +14,7 @@ if (Player == '1'):
   if (Maquina == '2'):
     print("Perdiste")
   elif (Maquina == '3'):
-     print("ganaste")
+     print("Ganaste")
 
 if (Player == '2'):
   if (Maquina == '3'):
@@ -24,6 +24,6 @@ if (Player == '2'):
 
 if (Player == '3'):
   if (Maquina == '1'):
-    print("perdiste")
+    print("Perdiste")
   elif (Maquina == '2'):
-    print("ganaste")
+    print("Ganaste")

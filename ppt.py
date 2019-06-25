@@ -1,30 +1,29 @@
 from random import choice
 
  
-print ("Hola, vamos a jugar a piedra, papel o tijera." )
+print ("Hola, vamos a jugar a piedra, papel o tijera. Elige: \n 1 = Piedra, 2 = Papel, 3 = Tijera " )
 
-Opciones = [1, 2, 3]
-Maquina = choice(Opciones)
-Eleccion = int(input( 1 '= Piedra', 2 '= Papel', 3 '= Tijera '))
+Opciones = ['1', '2', '3']
+Maquina = choice((Opciones))
+Player = input( "-->: ")
 
-if Eleccion == Maquina:
+if Player == Maquina:
    print("Empate")
 
-if (Eleccion == 1):
-
-  if (Maquina == 2):
+if (Player == '1'):
+  if (Maquina == '2'):
     print("Perdiste")
-  elif (Maquina == 3):
+  elif (Maquina == '3'):
      print("ganaste")
 
-if (Eleccion == 2):
-  if (Maquina == 3):
+if (Player == '2'):
+  if (Maquina == '3'):
      print("Perdiste")
-  elif (Maquina == 1):
+  elif (Maquina == '1'):
       print("Ganaste")
 
-if (Eleccion == 3):
-  if (Maquina == 1):
+if (Player == '3'):
+  if (Maquina == '1'):
     print("perdiste")
-  elif (Maquina == 2):
+  elif (Maquina == '2'):
     print("ganaste")
